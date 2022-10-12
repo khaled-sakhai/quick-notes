@@ -1,0 +1,32 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding-top: 1rem;
+}
+.form h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.form > *:not(:first-child) {
+  padding: 1rem;
+}
+
+.form input,
+.form input:focus,
+.form input:visited,
+.form input:-webkit-autofill,
+.form input:-webkit-autofill:focus,
+.form input:autofill {
+  background-color: rgb(255, 255, 255) !important;
+  background-image: none !important;
+  color: rgb(0, 0, 0) !important;
+}
+.form button {
+  padding: 1rem;
+  background-color: #b98c43ab;
+  cursor: pointer;
+}
+.form button:hover {
+  background-color: #b98b43;
+}

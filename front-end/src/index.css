@@ -1,0 +1,26 @@
+body {
+  background-image: url(../src/assets/background.jpg);
+  margin: 0;
+  font-family: vavont, BlinkMacSystemFont, -apple-system, helvetica neue,
+    Helvetica, sans-serif;
+
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+code {
+  font-family: vavont, BlinkMacSystemFont, -apple-system, helvetica neue,
+    Helvetica, sans-serif;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}

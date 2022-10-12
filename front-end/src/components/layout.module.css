@@ -1,0 +1,68 @@
+#layout {
+  padding: 1rem 4rem;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+  grid-template-columns: minmax(min-content, 20vw) minmax(40rem, 60vw) minmax(
+      min-content,
+      20vw
+    );
+  grid-template-areas:
+    "header header header"
+    "sideBar main-content rightBar"
+    "footer footer footer";
+  gap: 1rem;
+}
+.notesMargin {
+  border-right: 2px solid rgba(161, 76, 70, 0.45);
+  flex: 0 0 5rem;
+}
+main {
+  display: flex;
+  min-height: 80vh;
+  cursor: text;
+  width: auto;
+  grid-area: main-content;
+  background-color: #fff;
+  background-image: linear-gradient(
+      rgba(53, 85, 131, 0.1) 0%,
+      rgba(255, 255, 255, 0.2) 8%
+    ),
+    url(https://www.memonotepad.com/img/paperfibers.png);
+  background-position: 0 -3px, 0 0;
+  background-size: 100% 25px, 10% 10%;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgb(118 80 13 / 90%);
+}
+
+@media only screen and (max-width: 1024px) {
+  #layout {
+    grid-template-rows: min-content minmax(8vh, min-content) min-content min-content;
+    grid-template-columns: minmax(min-content, 20vw) 1fr;
+
+    grid-template-areas:
+      "header header"
+      "sideBar   rightBar"
+      "sideBar main-content"
+      "footer  footer";
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  main {
+    margin-top: 0rem;
+  }
+  #layout {
+    grid-template-rows:
+      min-content minmax(8vh, min-content) 1fr
+      min-content;
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+
+    grid-template-areas:
+      "header"
+      "rightBar"
+      "sideBar"
+      "main-content"
+      "footer";
+  }
+}

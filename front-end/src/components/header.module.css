@@ -1,0 +1,6 @@
+.header {
+  color: rgb(80, 44, 4);
+  grid-area: header;
+  font-size: 2rem;
+  padding: 2rem 0;
+}

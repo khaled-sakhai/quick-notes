@@ -1,0 +1,60 @@
+.noteEditor {
+  margin-top: 3rem;
+  padding: 0 2rem;
+}
+.noteEditor > * {
+  resize: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.noteTitle::before {
+  content: "#";
+  font-size: 2rem;
+}
+.noteTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgba(0, 0, 24, 0.918);
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow: auto;
+  max-width: 40vw;
+  min-width: 30rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .noteTitle {
+    min-width: 40vw;
+    max-width: 60vw;
+  }
+}
+.noteText {
+  -webkit-line-break: after-white-space;
+  unicode-bidi: embed;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  padding: 0.5rem 0;
+  height: 100%;
+  color: rgba(0, 0, 24, 0.692);
+  overflow: auto;
+  overflow-x: hidden;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+}
+.noteTitle::-webkit-scrollbar {
+  width: 3rem;
+}
+
+/* Track */
+.noteTitle::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 3px;
+}
+
+/* Handle */
+.noteTitle::-webkit-scrollbar-thumb {
+  background: rgb(221 197 161 / 66%);
+  border-radius: 3px;
+}

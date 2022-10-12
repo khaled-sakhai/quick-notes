@@ -1,0 +1,8 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  grid-area: footer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(37, 21, 2);
+}
