@@ -5,6 +5,7 @@ front-end/node_modules
 /.pnp
 front-end/.pnp.js
 
+/server-side/src/test
 # testing
 front-end/coverage
 
