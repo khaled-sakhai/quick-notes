@@ -11,6 +11,7 @@ Deployed and hosted on AWS
 
 DEMO:
 
+(Doesn't work anymore - AWS charges too much--but I'll update it soon)
 https://dev722.d2xnctd4n7kpt6.amplifyapp.com/
 
 The app is fully responsive:
